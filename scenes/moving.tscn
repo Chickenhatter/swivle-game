@@ -1,89 +1,25 @@
-[gd_scene format=4 uid="uid://dc3flddwtptkj"]
+[gd_scene format=3 uid="uid://dc3flddwtptkj"]
 
 [ext_resource type="Script" uid="uid://cv5vx1gvibuky" path="res://code/character_run.gd" id="1_du00b"]
-[ext_resource type="Texture2D" uid="uid://dkle1m3j5hj8x" path="res://icon.svg" id="2_tb1f5"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_du00b"]
-texture = ExtResource("2_tb1f5")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-7:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
-6:2/0 = 0
-7:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-6:3/0 = 0
-7:3/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-6:4/0 = 0
-7:4/0 = 0
-0:5/0 = 0
-1:5/0 = 0
-2:5/0 = 0
-3:5/0 = 0
-4:5/0 = 0
-5:5/0 = 0
-6:5/0 = 0
-7:5/0 = 0
-0:6/0 = 0
-1:6/0 = 0
-2:6/0 = 0
-3:6/0 = 0
-4:6/0 = 0
-5:6/0 = 0
-6:6/0 = 0
-7:6/0 = 0
-0:7/0 = 0
-1:7/0 = 0
-2:7/0 = 0
-3:7/0 = 0
-4:7/0 = 0
-5:7/0 = 0
-6:7/0 = 0
-7:7/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_tb1f5"]
-sources/1 = SubResource("TileSetAtlasSource_du00b")
+[ext_resource type="Texture2D" uid="uid://dso63ekmo584i" path="res://assets/random_items_school/pixil-frame-0(2).png" id="3_3jj4k"]
+[ext_resource type="Texture2D" uid="uid://iolorajryu3a" path="res://assets/character/pixil-frame-0.png" id="3_tb1f5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3jj4k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tb1f5"]
+size = Vector2(391, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b4f0y"]
+size = Vector2(11, 53)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3jj4k"]
+size = Vector2(2.5, 11)
 
 [node name="Node2D" type="Node2D" unique_id=2012489048]
 
 [node name="Node2D" type="Node2D" parent="." unique_id=574160820]
 
-[node name="map_tile" type="Node2D" parent="Node2D" unique_id=313827590]
-
-[node name="TileMapLayer" type="TileMapLayer" parent="Node2D/map_tile" unique_id=388329880]
-tile_map_data = PackedByteArray("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")
-tile_set = SubResource("TileSet_tb1f5")
+[node name="map" type="Node2D" parent="Node2D" unique_id=313827590]
 
 [node name="Character" type="Node2D" parent="Node2D" unique_id=573423795]
 
@@ -95,8 +31,48 @@ shape = SubResource("CircleShape2D_3jj4k")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/Character/CharacterBody2D" unique_id=741694602]
 position = Vector2(1, 1)
-scale = Vector2(0.1875, 0.1875)
-texture = ExtResource("2_tb1f5")
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_tb1f5")
+
+[node name="character_loss_find" type="Area2D" parent="Node2D/Character/CharacterBody2D" unique_id=1100650326]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/CharacterBody2D/character_loss_find" unique_id=947322143]
+shape = SubResource("CircleShape2D_3jj4k")
 
 [node name="Camera2D" type="Camera2D" parent="Node2D/Character" unique_id=1822090116]
 zoom = Vector2(3, 3)
+
+[node name="loss1" type="Node2D" parent="Node2D/Character/Camera2D" unique_id=1671059569]
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/loss1" unique_id=1908013965]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/loss1/loss" unique_id=761253726]
+position = Vector2(-2.5, 103)
+shape = SubResource("RectangleShape2D_tb1f5")
+
+[node name="loss2" type="Node2D" parent="Node2D/Character/Camera2D" unique_id=1985259458]
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/loss2" unique_id=2130940574]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/loss2/loss" unique_id=2070191161]
+position = Vector2(1, -103)
+shape = SubResource("RectangleShape2D_tb1f5")
+
+[node name="obsticals" type="Node2D" parent="Node2D" unique_id=1843485613]
+
+[node name="y_pencil" type="Node2D" parent="Node2D/obsticals" unique_id=523269380]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/obsticals/y_pencil" unique_id=1197066955]
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/y_pencil/Sprite2D" unique_id=888541861]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/y_pencil/Sprite2D/loss" unique_id=1314481198]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/y_pencil/Sprite2D/loss" unique_id=1596570568]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[connection signal="area_entered" from="Node2D/Character/CharacterBody2D/character_loss_find" to="Node2D/Character/CharacterBody2D" method="_on_character_loss_find_area_entered"]

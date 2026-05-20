@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cfqv25ihofn7f"]
+
+[ext_resource type="Script" uid="uid://dna65ggh8g0up" path="res://code/ending.gd" id="1_mqjok"]
+
+[node name="Node2D" type="Node2D" unique_id=212336370]
+
+[node name="ending" type="Node2D" parent="." unique_id=1568833738]
+script = ExtResource("1_mqjok")
+
+[node name="Camera2D" type="Camera2D" parent="ending" unique_id=1386047433]
+zoom = Vector2(3, 3)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ending" unique_id=987884298]
+offset_left = -75.0
+offset_top = -45.0
+offset_right = 73.0
+offset_bottom = 55.0
