@@ -18,6 +18,10 @@ func _physics_process(delta: float) -> void:
 			a                   -= 0.08
 		a -= 0.03
 		$".".position.y -= a
+	else:
+		a -= 0.03
+		$".".position.y -= a
+		$".".rotation_degrees = -a*20
 	if $".".position.x >= 4868.0:
 		$".".position.x  = -200
 		$"../Camera2D".position.x = -200
