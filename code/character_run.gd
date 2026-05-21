@@ -5,9 +5,9 @@ var speed = 0
 var meters = 0
 func _physics_process(delta: float) -> void:
 	if playing == true:
-		meters += 0.01
+		meters += 0.015    
 		$"."  .rotation_degrees = -a*20             
-		speed += 0.001                     
+		speed += 0.0035          
 		$".".position.x += (0.7+speed)
 		$"../Camera2D".position.x += (0.7+speed)
 		if Input.is_action_pressed('ui_space'):

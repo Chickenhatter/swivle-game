@@ -299,7 +299,7 @@ position = Vector2(34, 21)
 shape = SubResource("RectangleShape2D_3adur")
 
 [node name="Sprite2D5" type="Sprite2D" parent="Node2D/obsticals/desk" unique_id=95333432]
-position = Vector2(3770, -6)
+position = Vector2(3760, -33)
 scale = Vector2(7.79, 7.79)
 texture = ExtResource("6_mlgyy")
 
@@ -323,19 +323,19 @@ shape = SubResource("RectangleShape2D_3adur")
 position = Vector2(401, 64)
 texture = ExtResource("7_goqfi")
 
-[node name="Area2D" type="Area2D" parent="Node2D/obsticals/paper/Sprite2D" unique_id=1255501999]
+[node name="loss" type="Area2D" parent="Node2D/obsticals/paper/Sprite2D" unique_id=1255501999]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D/Area2D" unique_id=1190503630]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D/loss" unique_id=1190503630]
 position = Vector2(-4.544905, 15.24678)
 rotation = 1.8151424
 scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_mlgyy")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D/Area2D" unique_id=832768880]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D/loss" unique_id=832768880]
 position = Vector2(-12, 37)
 shape = SubResource("RectangleShape2D_is0w3")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D/Area2D" unique_id=1268214665]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D/loss" unique_id=1268214665]
 position = Vector2(3, -8)
 shape = SubResource("RectangleShape2D_is0w3")
 
@@ -344,19 +344,39 @@ position = Vector2(1728, -82)
 scale = Vector2(2, 2)
 texture = ExtResource("7_goqfi")
 
-[node name="Area2D" type="Area2D" parent="Node2D/obsticals/paper/Sprite2D2" unique_id=27698500]
+[node name="loss" type="Area2D" parent="Node2D/obsticals/paper/Sprite2D2" unique_id=27698500]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D2/Area2D" unique_id=673155231]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D2/loss" unique_id=673155231]
 position = Vector2(-4.544905, 15.24678)
 rotation = 1.8151424
 scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_mlgyy")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D2/Area2D" unique_id=891886392]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D2/loss" unique_id=891886392]
 position = Vector2(-12, 37)
 shape = SubResource("RectangleShape2D_is0w3")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D2/Area2D" unique_id=2066167173]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D2/loss" unique_id=2066167173]
+position = Vector2(3, -8)
+shape = SubResource("RectangleShape2D_is0w3")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/obsticals/paper" unique_id=367787672]
+position = Vector2(4484, -36)
+texture = ExtResource("7_goqfi")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/paper/Sprite2D3" unique_id=1832958971]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D3/loss" unique_id=385370970]
+position = Vector2(-4.544905, 15.24678)
+rotation = 1.8151424
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_mlgyy")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D3/loss" unique_id=593000686]
+position = Vector2(-12, 37)
+shape = SubResource("RectangleShape2D_is0w3")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D3/loss" unique_id=1184409742]
 position = Vector2(3, -8)
 shape = SubResource("RectangleShape2D_is0w3")
 
