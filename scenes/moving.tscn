@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://cv5vx1gvibuky" path="res://code/character_run.gd" id="1_du00b"]
 [ext_resource type="Texture2D" uid="uid://dso63ekmo584i" path="res://assets/random_items_school/pixil-frame-0(2).png" id="3_3jj4k"]
 [ext_resource type="Texture2D" uid="uid://iolorajryu3a" path="res://assets/character/pixil-frame-0.png" id="3_tb1f5"]
+[ext_resource type="Texture2D" uid="uid://dtuiiflf63n8i" path="res://assets/random_items_school/pixil-frame-0(3).png" id="4_b4ffe"]
+[ext_resource type="Texture2D" uid="uid://bkdujt4qk5tou" path="res://assets/random_items_school/pixil-frame-0(4).png" id="5_goqfi"]
+[ext_resource type="Texture2D" uid="uid://df3rjfknofhh7" path="res://assets/random_items_school/pixil-frame-0(1).png" id="6_mlgyy"]
+[ext_resource type="Texture2D" uid="uid://ysf6cnrydmun" path="res://assets/random_items_school/pixil-frame-0(5).png" id="7_goqfi"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3jj4k"]
 
@@ -14,6 +18,18 @@ size = Vector2(11, 53)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3jj4k"]
 size = Vector2(2.5, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wk3lt"]
+size = Vector2(59, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3adur"]
+size = Vector2(3, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlgyy"]
+size = Vector2(56.041595, 39.80127)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_is0w3"]
+size = Vector2(38, 8)
 
 [node name="Node2D" type="Node2D" unique_id=2012489048]
 
@@ -63,6 +79,7 @@ shape = SubResource("RectangleShape2D_tb1f5")
 [node name="y_pencil" type="Node2D" parent="Node2D/obsticals" unique_id=523269380]
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/obsticals/y_pencil" unique_id=1197066955]
+position = Vector2(139, 94)
 texture = ExtResource("3_3jj4k")
 
 [node name="loss" type="Area2D" parent="Node2D/obsticals/y_pencil/Sprite2D" unique_id=888541861]
@@ -74,5 +91,273 @@ shape = SubResource("RectangleShape2D_b4f0y")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/y_pencil/Sprite2D/loss" unique_id=1596570568]
 position = Vector2(-2.25, -41.5)
 shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/obsticals/y_pencil" unique_id=1172160088]
+position = Vector2(609, -166.00002)
+rotation = -2.7331855
+scale = Vector2(3, 3)
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/y_pencil/Sprite2D2" unique_id=1549890200]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/y_pencil/Sprite2D2/loss" unique_id=1164039684]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/y_pencil/Sprite2D2/loss" unique_id=1319775472]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/obsticals/y_pencil" unique_id=1484369000]
+position = Vector2(1290, 113)
+scale = Vector2(3, 3)
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/y_pencil/Sprite2D3" unique_id=1924617186]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/y_pencil/Sprite2D3/loss" unique_id=1383020187]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/y_pencil/Sprite2D3/loss" unique_id=1437654146]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Node2D/obsticals/y_pencil" unique_id=618470834]
+position = Vector2(2802, 163)
+scale = Vector2(3, 3)
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/y_pencil/Sprite2D4" unique_id=1099486509]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/y_pencil/Sprite2D4/loss" unique_id=1179943808]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/y_pencil/Sprite2D4/loss" unique_id=161853306]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="r_pencil" type="Node2D" parent="Node2D/obsticals" unique_id=47579009]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/obsticals/r_pencil" unique_id=1792965295]
+position = Vector2(1015, -75)
+texture = ExtResource("4_b4ffe")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/r_pencil/Sprite2D" unique_id=1272321070]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/r_pencil/Sprite2D/loss" unique_id=322188326]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/r_pencil/Sprite2D/loss" unique_id=1377857976]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/obsticals/r_pencil" unique_id=749896131]
+position = Vector2(2145, -124)
+rotation = 3.1415927
+scale = Vector2(2, 2)
+texture = ExtResource("4_b4ffe")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/r_pencil/Sprite2D2" unique_id=1754861855]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/r_pencil/Sprite2D2/loss" unique_id=1836216549]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/r_pencil/Sprite2D2/loss" unique_id=1468333759]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/obsticals/r_pencil" unique_id=1388117656]
+position = Vector2(3352.0002, -201)
+rotation = -2.4501145
+scale = Vector2(5, 5)
+texture = ExtResource("4_b4ffe")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/r_pencil/Sprite2D3" unique_id=1758976297]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/r_pencil/Sprite2D3/loss" unique_id=817539100]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/r_pencil/Sprite2D3/loss" unique_id=1810323613]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="g_pencil" type="Node2D" parent="Node2D/obsticals" unique_id=1250424964]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/obsticals/g_pencil" unique_id=1479463093]
+position = Vector2(1016, 100)
+texture = ExtResource("5_goqfi")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/g_pencil/Sprite2D" unique_id=268369841]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/g_pencil/Sprite2D/loss" unique_id=674905517]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/g_pencil/Sprite2D/loss" unique_id=2002251343]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/obsticals/g_pencil" unique_id=1846240244]
+position = Vector2(2780, -235.99998)
+rotation = 3.141244
+scale = Vector2(3, 3)
+texture = ExtResource("5_goqfi")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/g_pencil/Sprite2D2" unique_id=808036984]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/g_pencil/Sprite2D2/loss" unique_id=1124819478]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/g_pencil/Sprite2D2/loss" unique_id=542132861]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="desk" type="Node2D" parent="Node2D/obsticals" unique_id=1627680775]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/obsticals/desk" unique_id=769614184]
+position = Vector2(2160.0002, 92.00001)
+rotation = -3.106686
+scale = Vector2(2, 2)
+texture = ExtResource("6_mlgyy")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/desk/Sprite2D" unique_id=1023215037]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D/loss" unique_id=1953854778]
+position = Vector2(6.5, 10)
+shape = SubResource("RectangleShape2D_wk3lt")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D/loss" unique_id=1755420982]
+position = Vector2(-21.5, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D/loss" unique_id=1457724660]
+position = Vector2(34, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/obsticals/desk" unique_id=908693939]
+position = Vector2(754, 88)
+texture = ExtResource("6_mlgyy")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/desk/Sprite2D2" unique_id=2111969310]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D2/loss" unique_id=1155490436]
+position = Vector2(6.5, 10)
+shape = SubResource("RectangleShape2D_wk3lt")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D2/loss" unique_id=1352310669]
+position = Vector2(-21.5, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D2/loss" unique_id=1617146343]
+position = Vector2(34, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/obsticals/desk" unique_id=156025865]
+position = Vector2(2431, 16.999931)
+rotation = -2.6653984
+scale = Vector2(4, 4)
+texture = ExtResource("6_mlgyy")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/desk/Sprite2D3" unique_id=2056250996]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D3/loss" unique_id=1850140449]
+position = Vector2(6.5, 10)
+shape = SubResource("RectangleShape2D_wk3lt")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D3/loss" unique_id=406591735]
+position = Vector2(-21.5, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D3/loss" unique_id=248787893]
+position = Vector2(34, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Node2D/obsticals/desk" unique_id=1402267165]
+position = Vector2(3874.0002, -9)
+rotation = -3.1534336
+scale = Vector2(8, 8)
+texture = ExtResource("6_mlgyy")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/desk/Sprite2D4" unique_id=1803901304]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D4/loss" unique_id=1170509421]
+position = Vector2(6.5, 10)
+shape = SubResource("RectangleShape2D_wk3lt")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D4/loss" unique_id=38038716]
+position = Vector2(-21.5, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D4/loss" unique_id=273181206]
+position = Vector2(34, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Node2D/obsticals/desk" unique_id=95333432]
+position = Vector2(3770, -6)
+scale = Vector2(7.79, 7.79)
+texture = ExtResource("6_mlgyy")
+
+[node name="loss" type="Area2D" parent="Node2D/obsticals/desk/Sprite2D5" unique_id=1745439946]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D5/loss" unique_id=524928682]
+position = Vector2(6.5, 10)
+shape = SubResource("RectangleShape2D_wk3lt")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D5/loss" unique_id=1123552939]
+position = Vector2(-21.5, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/desk/Sprite2D5/loss" unique_id=2117545286]
+position = Vector2(34, 21)
+shape = SubResource("RectangleShape2D_3adur")
+
+[node name="paper" type="Node2D" parent="Node2D/obsticals" unique_id=601155403]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/obsticals/paper" unique_id=1121665632]
+position = Vector2(401, 64)
+texture = ExtResource("7_goqfi")
+
+[node name="Area2D" type="Area2D" parent="Node2D/obsticals/paper/Sprite2D" unique_id=1255501999]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D/Area2D" unique_id=1190503630]
+position = Vector2(-4.544905, 15.24678)
+rotation = 1.8151424
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_mlgyy")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D/Area2D" unique_id=832768880]
+position = Vector2(-12, 37)
+shape = SubResource("RectangleShape2D_is0w3")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D/Area2D" unique_id=1268214665]
+position = Vector2(3, -8)
+shape = SubResource("RectangleShape2D_is0w3")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/obsticals/paper" unique_id=1104108054]
+position = Vector2(1728, -82)
+scale = Vector2(2, 2)
+texture = ExtResource("7_goqfi")
+
+[node name="Area2D" type="Area2D" parent="Node2D/obsticals/paper/Sprite2D2" unique_id=27698500]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D2/Area2D" unique_id=673155231]
+position = Vector2(-4.544905, 15.24678)
+rotation = 1.8151424
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_mlgyy")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D2/Area2D" unique_id=891886392]
+position = Vector2(-12, 37)
+shape = SubResource("RectangleShape2D_is0w3")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D2/Area2D" unique_id=2066167173]
+position = Vector2(3, -8)
+shape = SubResource("RectangleShape2D_is0w3")
 
 [connection signal="area_entered" from="Node2D/Character/CharacterBody2D/character_loss_find" to="Node2D/Character/CharacterBody2D" method="_on_character_loss_find_area_entered"]
