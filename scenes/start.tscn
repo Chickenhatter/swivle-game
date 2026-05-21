@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d17cevgohei5t"]
+
+[ext_resource type="Script" uid="uid://i6jjibcpm5dx" path="res://code/start_character.gd" id="1_jaeev"]
+[ext_resource type="Texture2D" uid="uid://iolorajryu3a" path="res://assets/character/pixil-frame-0.png" id="2_u80x2"]
+
+[node name="Node2D" type="Node2D" unique_id=1792505339]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1766409144]
+
+[node name="Node2D" type="Node2D" parent="Node2D" unique_id=1305959460]
+
+[node name="Camera2D" type="Camera2D" parent="Node2D/Node2D" unique_id=1449185549]
+zoom = Vector2(2, 2)
+
+[node name="Node2D2" type="Node2D" parent="Node2D" unique_id=53296]
+
+[node name="Node2D3" type="Node2D" parent="Node2D" unique_id=922673786]
+script = ExtResource("1_jaeev")
+
+[node name="Button" type="Button" parent="Node2D/Node2D3" unique_id=403214205]
+offset_left = -43.0
+offset_top = -28.0
+offset_right = -35.0
+offset_bottom = -20.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Node2D3" unique_id=689479540]
+texture = ExtResource("2_u80x2")
+
+[connection signal="pressed" from="Node2D/Node2D3/Button" to="Node2D/Node2D3" method="_on_button_pressed"]

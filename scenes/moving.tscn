@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cv5vx1gvibuky" path="res://code/character_run.gd" id="1_du00b"]
 [ext_resource type="Texture2D" uid="uid://dso63ekmo584i" path="res://assets/random_items_school/pixil-frame-0(2).png" id="3_3jj4k"]
+[ext_resource type="Texture2D" uid="uid://b5cvpxn26pe65" path="res://assets/back/not_my_image.png" id="3_mlgyy"]
 [ext_resource type="Texture2D" uid="uid://iolorajryu3a" path="res://assets/character/pixil-frame-0.png" id="3_tb1f5"]
 [ext_resource type="Texture2D" uid="uid://dtuiiflf63n8i" path="res://assets/random_items_school/pixil-frame-0(3).png" id="4_b4ffe"]
 [ext_resource type="Texture2D" uid="uid://bkdujt4qk5tou" path="res://assets/random_items_school/pixil-frame-0(4).png" id="5_goqfi"]
@@ -73,6 +74,306 @@ shape = SubResource("RectangleShape2D_tb1f5")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/loss2/loss" unique_id=2070191161]
 position = Vector2(1, -103)
 shape = SubResource("RectangleShape2D_tb1f5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Character/Camera2D" unique_id=1899072635]
+self_modulate = Color(0.8627451, 0.8784314, 0.8666667, 1)
+z_index = -11
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_mlgyy")
+
+[node name="Node2D" type="Node2D" parent="Node2D/Character/Camera2D" unique_id=82181194]
+z_index = 100
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D" unique_id=1787178981]
+position = Vector2(-186, 108.00001)
+rotation = 1.5176793
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D/Sprite2D" unique_id=445784174]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Sprite2D/loss" unique_id=385989842]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Sprite2D/loss" unique_id=2146080361]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D" unique_id=1701602351]
+position = Vector2(-134, 109.99999)
+rotation = 1.4817846
+texture = ExtResource("4_b4ffe")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D/Sprite2D2" unique_id=1717689730]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Sprite2D2/loss" unique_id=1722143489]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Sprite2D2/loss" unique_id=121072124]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D" unique_id=1600204682]
+position = Vector2(-79.999985, 109)
+rotation = 1.5176793
+texture = ExtResource("5_goqfi")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D/Sprite2D3" unique_id=529220814]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Sprite2D3/loss" unique_id=793830227]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Sprite2D3/loss" unique_id=586762877]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Node2D" type="Node2D" parent="Node2D/Character/Camera2D/Node2D" unique_id=50887621]
+position = Vector2(159, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D/Node2D" unique_id=2127216893]
+position = Vector2(-186, 108.00001)
+rotation = 1.5176793
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D/Node2D/Sprite2D" unique_id=880676158]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D/Sprite2D/loss" unique_id=1763967970]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D/Sprite2D/loss" unique_id=1986553040]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D/Node2D" unique_id=1122883469]
+position = Vector2(-134, 109.99999)
+rotation = 1.4817846
+texture = ExtResource("4_b4ffe")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D/Node2D/Sprite2D2" unique_id=302315879]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D/Sprite2D2/loss" unique_id=2121869430]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D/Sprite2D2/loss" unique_id=422325943]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D/Node2D" unique_id=1438857829]
+position = Vector2(-79.999985, 109)
+rotation = 1.5176793
+texture = ExtResource("5_goqfi")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D/Node2D/Sprite2D3" unique_id=1815020743]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D/Sprite2D3/loss" unique_id=790857017]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D/Sprite2D3/loss" unique_id=1493180443]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Node2D2" type="Node2D" parent="Node2D/Character/Camera2D/Node2D" unique_id=1860811964]
+position = Vector2(310, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2" unique_id=20117059]
+position = Vector2(-186, 108.00001)
+rotation = 1.5176793
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2/Sprite2D" unique_id=1902732523]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2/Sprite2D/loss" unique_id=1846265736]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2/Sprite2D/loss" unique_id=1018571957]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2" unique_id=1435861645]
+position = Vector2(-134, 109.99999)
+rotation = 1.4817846
+texture = ExtResource("4_b4ffe")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2/Sprite2D2" unique_id=875482388]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2/Sprite2D2/loss" unique_id=897642432]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2/Sprite2D2/loss" unique_id=185892451]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2" unique_id=717582971]
+position = Vector2(-79.999985, 109)
+rotation = 1.5176793
+texture = ExtResource("5_goqfi")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2/Sprite2D3" unique_id=680015450]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2/Sprite2D3/loss" unique_id=732099162]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D/Node2D2/Sprite2D3/loss" unique_id=729912613]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Node2D2" type="Node2D" parent="Node2D/Character/Camera2D" unique_id=723996874]
+z_index = 100
+
+[node name="Node2D" type="Node2D" parent="Node2D/Character/Camera2D/Node2D2" unique_id=1625805516]
+position = Vector2(15, -2)
+rotation = -3.1241393
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D" unique_id=582189386]
+position = Vector2(-186, 108.00001)
+rotation = 1.5176793
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D/Sprite2D" unique_id=609240189]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D/Sprite2D/loss" unique_id=54424276]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D/Sprite2D/loss" unique_id=1029156571]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D" unique_id=1902743037]
+position = Vector2(-134, 109.99999)
+rotation = 1.4817846
+texture = ExtResource("4_b4ffe")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D/Sprite2D2" unique_id=1683022498]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D/Sprite2D2/loss" unique_id=1624284659]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D/Sprite2D2/loss" unique_id=1990562218]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D" unique_id=1072434644]
+position = Vector2(-79.999985, 109)
+rotation = 1.5176793
+texture = ExtResource("5_goqfi")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D/Sprite2D3" unique_id=1349696935]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D/Sprite2D3/loss" unique_id=309237006]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D/Sprite2D3/loss" unique_id=1487874858]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Node2D2" type="Node2D" parent="Node2D/Character/Camera2D/Node2D2" unique_id=425133559]
+position = Vector2(-145, -1)
+rotation = -3.1241393
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2" unique_id=988725201]
+position = Vector2(-186, 108.00001)
+rotation = 1.5176793
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2/Sprite2D" unique_id=946950874]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2/Sprite2D/loss" unique_id=687070837]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2/Sprite2D/loss" unique_id=1710014719]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2" unique_id=1210686720]
+position = Vector2(-134, 109.99999)
+rotation = 1.4817846
+texture = ExtResource("4_b4ffe")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2/Sprite2D2" unique_id=1803024299]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2/Sprite2D2/loss" unique_id=1441935348]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2/Sprite2D2/loss" unique_id=743890612]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2" unique_id=1113434153]
+position = Vector2(-79.999985, 109)
+rotation = 1.5176793
+texture = ExtResource("5_goqfi")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2/Sprite2D3" unique_id=716279096]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2/Sprite2D3/loss" unique_id=962921698]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D2/Sprite2D3/loss" unique_id=1784688161]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Node2D3" type="Node2D" parent="Node2D/Character/Camera2D/Node2D2" unique_id=1177268381]
+position = Vector2(-306, -2)
+rotation = -3.1241393
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3" unique_id=231526986]
+position = Vector2(-186, 108.00001)
+rotation = 1.5176793
+texture = ExtResource("3_3jj4k")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3/Sprite2D" unique_id=1021974611]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3/Sprite2D/loss" unique_id=542452906]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3/Sprite2D/loss" unique_id=1208806875]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3" unique_id=944487646]
+position = Vector2(-134, 109.99999)
+rotation = 1.4817846
+texture = ExtResource("4_b4ffe")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3/Sprite2D2" unique_id=1785047015]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3/Sprite2D2/loss" unique_id=1362694424]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3/Sprite2D2/loss" unique_id=502312647]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3" unique_id=1278760675]
+position = Vector2(-79.999985, 109)
+rotation = 1.5176793
+texture = ExtResource("5_goqfi")
+
+[node name="loss" type="Area2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3/Sprite2D3" unique_id=1391662081]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3/Sprite2D3/loss" unique_id=1529145330]
+position = Vector2(-2.5, -9.5)
+shape = SubResource("RectangleShape2D_b4f0y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Character/Camera2D/Node2D2/Node2D3/Sprite2D3/loss" unique_id=524889683]
+position = Vector2(-2.25, -41.5)
+shape = SubResource("RectangleShape2D_3jj4k")
 
 [node name="obsticals" type="Node2D" parent="Node2D" unique_id=1843485613]
 
@@ -379,5 +680,8 @@ shape = SubResource("RectangleShape2D_is0w3")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/obsticals/paper/Sprite2D3/loss" unique_id=1184409742]
 position = Vector2(3, -8)
 shape = SubResource("RectangleShape2D_is0w3")
+
+[node name="Node2D2" type="Node2D" parent="." unique_id=177203068]
+position = Vector2(-195, 0)
 
 [connection signal="area_entered" from="Node2D/Character/CharacterBody2D/character_loss_find" to="Node2D/Character/CharacterBody2D" method="_on_character_loss_find_area_entered"]
