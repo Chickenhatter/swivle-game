@@ -9,7 +9,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if dropping == true:
-		a -= 0.002
+		a -= 0.004
 		$Sprite2D.rotation_degrees = -a*200
 		$Sprite2D.position.y += -a*10
 		$Sprite2D.position.x += 1

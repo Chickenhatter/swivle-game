@@ -7,6 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://bkdujt4qk5tou" path="res://assets/random_items_school/pixil-frame-0(4).png" id="5_y16t7"]
 [ext_resource type="Texture2D" uid="uid://ysf6cnrydmun" path="res://assets/random_items_school/pixil-frame-0(5).png" id="6_y16t7"]
 [ext_resource type="Texture2D" uid="uid://b5cvpxn26pe65" path="res://assets/back/not_my_image.png" id="7_4ge6i"]
+[ext_resource type="Script" uid="uid://css43gjbq5b2s" path="res://code/help.gd" id="8_8itgj"]
+[ext_resource type="Texture2D" uid="uid://d1m7duynsbbc1" path="res://assets/back/question.png" id="9_tn317"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m8nf6"]
+radius = 21.023796
 
 [node name="Node2D" type="Node2D" unique_id=1792505339]
 
@@ -524,4 +529,29 @@ position = Vector2(-4, 9)
 scale = Vector2(2, 2)
 texture = ExtResource("7_4ge6i")
 
+[node name="Node2D2" type="Node2D" parent="." unique_id=1198621550]
+script = ExtResource("8_8itgj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node2D2" unique_id=841217077]
+self_modulate = Color(0, 0, 0, 0)
+offset_left = -229.0
+offset_top = 52.0
+offset_right = 247.0
+offset_bottom = 123.0
+text = "This game only needs the left click on the mouse but you can also use the space for movement. To start the game press the paper aeroplane"
+
+[node name="sad" type="Area2D" parent="Node2D2" unique_id=145583108]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D2/sad" unique_id=369752458]
+position = Vector2(-219, -96)
+shape = SubResource("CircleShape2D_m8nf6")
+
+[node name="Question" type="Sprite2D" parent="." unique_id=1959288856]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(-218, -95)
+scale = Vector2(0.6, 0.64)
+texture = ExtResource("9_tn317")
+
 [connection signal="pressed" from="Node2D/Node2D3/Node2D/Button" to="Node2D/Node2D3" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Node2D2/sad" to="Node2D2" method="_on_sad_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D2/sad" to="Node2D2" method="_on_sad_mouse_exited"]

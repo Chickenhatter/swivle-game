@@ -425,7 +425,7 @@ position = Vector2(-2.25, -41.5)
 shape = SubResource("RectangleShape2D_3jj4k")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Node2D/obsticals/y_pencil" unique_id=618470834]
-position = Vector2(2809, 200.00002)
+position = Vector2(2799, 232)
 scale = Vector2(3, 3)
 texture = ExtResource("3_3jj4k")
 
@@ -522,7 +522,7 @@ shape = SubResource("RectangleShape2D_3jj4k")
 [node name="desk" type="Node2D" parent="Node2D/obsticals" unique_id=1627680775]
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/obsticals/desk" unique_id=769614184]
-position = Vector2(2160.0002, 92.00001)
+position = Vector2(2162.0002, 117.00001)
 rotation = -3.106686
 scale = Vector2(2, 2)
 texture = ExtResource("6_mlgyy")
@@ -641,7 +641,7 @@ position = Vector2(3, -8)
 shape = SubResource("RectangleShape2D_is0w3")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Node2D/obsticals/paper" unique_id=1104108054]
-position = Vector2(1728, -82)
+position = Vector2(1730, -102)
 scale = Vector2(2, 2)
 texture = ExtResource("7_goqfi")
 
