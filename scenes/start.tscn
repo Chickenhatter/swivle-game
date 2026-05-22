@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dtuiiflf63n8i" path="res://assets/random_items_school/pixil-frame-0(3).png" id="4_0auqf"]
 [ext_resource type="Texture2D" uid="uid://bkdujt4qk5tou" path="res://assets/random_items_school/pixil-frame-0(4).png" id="5_y16t7"]
 [ext_resource type="Texture2D" uid="uid://ysf6cnrydmun" path="res://assets/random_items_school/pixil-frame-0(5).png" id="6_y16t7"]
+[ext_resource type="Texture2D" uid="uid://b5cvpxn26pe65" path="res://assets/back/not_my_image.png" id="7_4ge6i"]
 
 [node name="Node2D" type="Node2D" unique_id=1792505339]
 
@@ -29,7 +30,7 @@ position = Vector2(389, 234)
 scale = Vector2(10, 10)
 
 [node name="Button" type="Button" parent="Node2D/Node2D3/Node2D" unique_id=403214205]
-z_index = -100
+z_index = -1001
 offset_left = -43.0
 offset_top = -28.0
 offset_right = -35.0
@@ -514,5 +515,13 @@ z_index = -10
 position = Vector2(-71.45873, 61.046265)
 rotation = 1.8027246
 texture = ExtResource("6_y16t7")
+
+[node name="Node2D5" type="Node2D" parent="Node2D" unique_id=729027942]
+
+[node name="NotMyImage" type="Sprite2D" parent="Node2D/Node2D5" unique_id=896344271]
+z_index = -1000
+position = Vector2(-4, 9)
+scale = Vector2(2, 2)
+texture = ExtResource("7_4ge6i")
 
 [connection signal="pressed" from="Node2D/Node2D3/Node2D/Button" to="Node2D/Node2D3" method="_on_button_pressed"]

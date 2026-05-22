@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cfqv25ihofn7f"]
 
 [ext_resource type="Script" uid="uid://dna65ggh8g0up" path="res://code/ending.gd" id="1_mqjok"]
+[ext_resource type="Texture2D" uid="uid://b5cvpxn26pe65" path="res://assets/back/not_my_image.png" id="2_fyrdv"]
+[ext_resource type="Texture2D" uid="uid://ysf6cnrydmun" path="res://assets/random_items_school/pixil-frame-0(5).png" id="3_2x1jc"]
 
 [node name="Node2D" type="Node2D" unique_id=212336370]
 
@@ -11,7 +13,24 @@ script = ExtResource("1_mqjok")
 zoom = Vector2(3, 3)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ending" unique_id=987884298]
-offset_left = -75.0
-offset_top = -45.0
-offset_right = 73.0
-offset_bottom = 55.0
+z_index = 2
+offset_left = -149.0
+offset_top = -67.0
+offset_right = 151.0
+offset_bottom = 63.0
+bbcode_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ending" unique_id=422549081]
+z_index = -111
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_fyrdv")
+
+[node name="Node2D" type="Node2D" parent="ending" unique_id=1937839338]
+
+[node name="PixilFrame0(5)" type="Node2D" parent="ending" unique_id=800327625]
+
+[node name="PixilFrame0(5)" type="Sprite2D" parent="ending/PixilFrame0(5)" unique_id=1358061186]
+self_modulate = Color(2.6436596, 2.6436596, 2.6436596, 1)
+position = Vector2(27, -54.999996)
+scale = Vector2(5, 5)
+texture = ExtResource("3_2x1jc")

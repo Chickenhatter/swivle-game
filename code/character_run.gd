@@ -10,7 +10,7 @@ func _physics_process(delta: float) -> void:
 		speed += 0.001
 		$".".position.x += (0.7+speed)
 		$"../Camera2D".position.x += (0.7+speed)
-		if Input.is_action_pressed('ui_space'):
+		if (Input.is_action_pressed('ui_space')) or (Input.is_action_pressed('ui_lef')):
 			if a < 0:
 				a += 0.08                 
 			a += 0.06        
